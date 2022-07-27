@@ -44,6 +44,13 @@ export const button = {
 			border: `2px solid ${colors.white}`,
 		},
 	}),
+	btnTransparentBorderBlue: css({
+		'&, &:link, &:visited': {
+			color: colors.darkBlue,
+			backgroundColor: "transparent",
+			border: `2px solid ${colors.darkBlue}`,
+		},
+	}),
 	btnLink: css({
 		'&, &:link, &:visited': {
 			justifyContent: "space-between",

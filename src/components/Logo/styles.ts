@@ -3,9 +3,10 @@ import {mixin} from "../../styles/mixin";
 
 export const styles = {
 	logo: css({
-		display: "flex",
+		display: "inline-flex",
 		alignItems: "center",
 		gap: '11px',
+		cursor: "pointer",
 	}),
 	text: css({
 		fontFamily: 'Manrope',

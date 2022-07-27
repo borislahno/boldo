@@ -6,6 +6,9 @@ export const styles = {
 	hero: css({
 		padding: '162px 20px 64px 20px',
 		backgroundColor: colors.darkBlue,
+		'& > div': {
+			maxWidth: "1200px",
+		}
 	}),
 	main: css({
 		display: 'flex',
@@ -14,7 +17,7 @@ export const styles = {
 		gap: '10px',
 	}),
 	content: css({
-		flex: "0 1 567px",
+		flex: "0 1 573px",
 	}),
 	imageBox: css({
 		flex: "0 1 494px",
@@ -31,8 +34,8 @@ export const styles = {
 		color: colors.lightGray,
 	}),
 	buttons: css({
-		display:"flex",
-		gap:'24px',
+		display: "flex",
+		gap: '24px',
 	}),
 	logoBox: css({
 		position: 'relative',

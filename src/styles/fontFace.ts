@@ -1,7 +1,7 @@
 
 export const fontFace = `
     @font-face {
-  		font-family: 'Mulish';
+  		font-family: 'Manrope';
 			font-display: swap;
 			src: url('/fonts/Manrope-Regular.woff') format('woff');
 			font-weight: 400;

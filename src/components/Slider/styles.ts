@@ -8,7 +8,7 @@ export const styles = {
 	path: css({
 		position: 'relative',
 		display: 'flex',
-		gap: '50px',
+		gap: '22px',
 		transition: 'left 0.4s',
 	}),
 	buttonBox: css({

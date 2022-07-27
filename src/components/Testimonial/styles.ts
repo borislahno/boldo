@@ -4,7 +4,8 @@ import {mixin} from "../../styles/mixin";
 
 export const styles = {
 	testimonial: css({
-		flex: "0 0 360px",
+		flex: "0 0 350px",
+		height: "100%",
 		padding: "40px",
 		backgroundColor: colors.white,
 		borderRadius: "12px",

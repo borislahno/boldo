@@ -9,7 +9,7 @@ const HeaderNavigation: React.FC = () =>
 		<ul css={styles.list}>
 			<LinkItem to="#" name="Product"/>
 			<LinkItem to="#" name="Services"/>
-			<LinkItem to="#" name="About"/>
+			<LinkItem to="/about" name="About"/>
 			<li>
 				<Link href="#">
 					<a css={[button.btn, button.btnWhite, {width: '128px', height: '40px'}]}>

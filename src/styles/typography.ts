@@ -4,10 +4,18 @@ import {colors} from "./colors";
 
 export const typography = {
 	headingPrimarySmall: css({
+		fontFamily: "Manrope",
 		...mixin.font('3rem', 400, '4.5rem'),
 		color: colors.white,
 	}),
+	headingPrimaryLarge: css({
+		fontFamily: "Manrope",
+		...mixin.font('4rem', 400, '5.25rem'),
+		color: colors.white,
+		textAlign: "center",
+	}),
 	headingSecondary: css({
+		fontFamily: "Manrope",
 		...mixin.font('3rem', 400, '4.5rem'),
 		color: colors.black,
 		textAlign: "center",

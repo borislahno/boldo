@@ -13,5 +13,13 @@ export const styles = {
 			opacity: 0.7,
 		}
 	}),
-	grayLink: css({}),
+	grayLink: css({
+		...mixin.font('1.25rem', 400, '2rem'),
+		color: colors.gray,
+		cursor: "pointer",
+		transition: 'all .2s',
+		'&:hover, &:active': {
+			opacity: 0.7,
+		}
+	}),
 }

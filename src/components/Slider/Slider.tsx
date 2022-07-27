@@ -12,17 +12,17 @@ type SliderProps = {
 
 const Slider: React.FC<SliderProps> = ({count, items}) => {
 	const [position, setPosition] = useState<number>(0);
-	const start = -400 * (count - 1);
+	const start = -372 * (count - 1);
 
 	const onNextClick = () => {
 		if (position > start) {
-			setPosition(position - 400)
+			setPosition(position - 372)
 		}
 	}
 
 	const onPreviousClick = () => {
 		if (position < 0) {
-			setPosition(position + 400);
+			setPosition(position + 372);
 		}
 	}
 	return (
