@@ -1,16 +1,17 @@
 import {css} from '@emotion/react';
 import {colors} from "../../styles/colors";
 import {mixin} from "../../styles/mixin";
+import {media} from "../../styles/breakpoints";
 
 export const styles = {
-	hero: css({
-		padding: "155px 20px 166px 20px",
+	hero: css(media({
+		padding: ["155px 20px 166px 20px", null, null, null, "135px 20px 166px 20px", "120px 20px 166px 20px"],
 		backgroundColor: colors.darkBlue,
-	}),
-	subtitle: css({
-		marginBottom: "12px",
+	})),
+	subtitle: css(media({
+		marginBottom: ["12px", null, null, null, "8px", "4px"],
 		color: colors.white,
-	}),
+	})),
 	heading: css({
 		maxWidth: "842px",
 		margin: "0 auto 17px auto"

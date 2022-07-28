@@ -1,15 +1,16 @@
 import {css} from '@emotion/react';
 import {mixin} from "../../styles/mixin";
 import {colors} from "../../styles/colors";
+import {media} from "../../styles/breakpoints";
 
 export const styles = {
-	item: css({
+	item: css(media({
 		display: "flex",
 		alignItems: "center",
-		gap: '16px',
-		width: "500px",
+		gap: ['16px', null, null, null, null, '8px'],
+		maxWidth: "500px",
 		height: "68px",
-		paddingLeft: "22px",
+		paddingLeft: ["22px", null, null, null, null, "10px"],
 		...mixin.font('1rem', 600, '1.75rem'),
 		color: colors.black,
 		borderRadius: "4px",
@@ -20,5 +21,5 @@ export const styles = {
 			color: colors.white,
 			backgroundColor: colors.darkBlue,
 		}
-	}),
+	})),
 }

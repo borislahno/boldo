@@ -1,5 +1,5 @@
 export const mixin = {
-	font: (fontSize: string, fontWeight: number, lineHeight: string) => ({
+	font: (fontSize: any, fontWeight: number, lineHeight: any) => ({
 		fontSize,
 		fontWeight,
 		lineHeight,

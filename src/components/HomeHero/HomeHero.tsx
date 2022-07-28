@@ -17,10 +17,10 @@ const HomeHero: React.FC = () =>
 					</p>
 					<div css={styles.buttons}>
 						<Link href="#">
-							<a css={[button.btn, button.btnGreen, {width: '247px', height: '60px'}]}>Buy template</a>
+							<a css={[button.btn, button.btnGreen, styles.buy]}>Buy template</a>
 						</Link>
 						<Link href="#">
-							<a css={[button.btn, button.btnTransparentBorderWhite, {width: '187px', height: '60px'}]}>Explore</a>
+							<a css={[button.btn, button.btnTransparentBorderWhite, styles.explore]}>Explore</a>
 						</Link>
 					</div>
 				</div>

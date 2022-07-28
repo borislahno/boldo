@@ -1,7 +1,7 @@
+/** @jsxImportSource @emotion/react */
+
 import {styles} from "./styles";
 import {utils} from "../../styles/utils";
-
-/** @jsxImportSource @emotion/react */
 
 type PostItemProps = {
 	image: string,

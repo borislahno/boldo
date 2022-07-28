@@ -1,21 +1,22 @@
 import {css} from '@emotion/react';
 import {colors} from "../../styles/colors";
 import {mixin} from "../../styles/mixin";
+import {media} from "../../styles/breakpoints";
 
 export const styles = {
-	testimonial: css({
-		flex: "0 0 350px",
+	testimonial: css(media({
+		flex: ["0 0 350px", null, null, null, null, "0 0 300px"],
 		height: "100%",
-		padding: "40px",
+		padding: ["40px", null, null, null, null, "20px"],
 		backgroundColor: colors.white,
 		borderRadius: "12px",
 		boxShadow: "0px 12px 32px rgba(0, 0, 0, 0.12)",
-	}),
-	text: css({
-		marginBottom: "40px",
+	})),
+	text: css(media({
+		marginBottom: ["40px", null, null, null, null, "20px"],
 		...mixin.font("1.5rem", 400, "2.25rem"),
 		color: colors.black,
-	}),
+	})),
 	footer: css({
 		display: "flex",
 		alignItems: "center",

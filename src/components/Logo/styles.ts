@@ -10,6 +10,6 @@ export const styles = {
 	}),
 	text: css({
 		fontFamily: 'Manrope',
-		...mixin.font('2.69rem', 700, '2.125rem'),
+		...mixin.font('43px', 700, '2.125rem'),
 	})
 }

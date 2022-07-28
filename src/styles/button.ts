@@ -24,7 +24,6 @@ export const button = {
 	}),
 	btnWhite: css({
 		'&, &:link, &:visited': {
-			...mixin.font("1rem", 700, "1.5rem"),
 			color: colors.darkBlue,
 			borderRadius: '24px',
 			backgroundColor: colors.white,

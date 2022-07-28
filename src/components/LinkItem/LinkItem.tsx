@@ -4,7 +4,7 @@ import {styles} from "./styles";
 import {ReactNode} from "react";
 
 type LinkItemProps = {
-	type?: 'white' | 'gray',
+	type?: 'white' | 'gray' | 'dark',
 	to: string,
 	name: string,
 	children?: ReactNode,
@@ -13,7 +13,7 @@ type LinkItemProps = {
 const LinkItem: React.FC<LinkItemProps> = ({type = 'white', to, name, children}) =>
 	<li>
 		<Link href={to}>
-			<a css={styles[`${type}Link`]}>{name} {children}</a>
+			<a css={[styles.link, styles[`${type}Link`]]}>{name} {children}</a>
 		</Link>
 	</li>
 
