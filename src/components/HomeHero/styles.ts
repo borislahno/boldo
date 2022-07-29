@@ -6,7 +6,7 @@ import {media} from "../../styles/breakpoints";
 export const styles = {
 	hero: css(media({
 		position: "relative",
-		zIndex: "-2",
+		zIndex: "10",
 		padding: ['162px 20px 64px 20px', null, null, null, '110px 20px 64px 20px', '110px 20px 40px 20px'],
 		backgroundColor: colors.darkBlue,
 		overflow: "hidden",

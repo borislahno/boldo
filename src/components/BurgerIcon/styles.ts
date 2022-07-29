@@ -5,6 +5,7 @@ import {media} from "../../styles/breakpoints";
 export const styles = {
 	burgerIcon: css(media({
 		position: "absolute",
+		zIndex: "100",
 		right: "20px",
 		display: ["none", null, null, null, "block"],
 		width: "42px",

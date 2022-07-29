@@ -5,10 +5,10 @@ import {colors} from "../../styles/colors";
 
 export const styles = {
 	navigation: css(media({
-		position: [null, null, null, null, "fixed"],
+		position: ["relative", null, null, null, "fixed"],
 		top: [null, null, null, null, 0],
 		left: [null, null, null, null, "-40%", "-55%"],
-		zIndex: [null, null, null, null, "5"],
+		zIndex: "100",
 		width: [null, null, null, null, "200px"],
 		height: ["50px", null, null, null, "100%"],
 		padding: [null, null, null, null, "120px 0 30px 0"],
