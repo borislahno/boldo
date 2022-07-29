@@ -28,9 +28,9 @@ export const styles = {
 		color: colors.white,
 		textAlign: [null, null, null, null, null, "center"]
 	})),
-	text: css({
+	text: css(media({
 		...mixin.font(["1.25rem", null, null, null, "1rem"], 400, ["2rem", null, null, null, "1.5rem"]),
 		color: colors.white,
-		textAlign: "center"
-	}),
+		textAlign: [null,null,null,null,null,"center"],
+	})),
 }

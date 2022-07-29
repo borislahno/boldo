@@ -5,10 +5,24 @@ import {media} from "../../styles/breakpoints";
 
 export const styles = {
 	hero: css(media({
+		position: "relative",
+		zIndex: "-2",
 		padding: ['162px 20px 64px 20px', null, null, null, '110px 20px 64px 20px', '110px 20px 40px 20px'],
 		backgroundColor: colors.darkBlue,
+		overflow: "hidden",
 		'& > div': {
 			maxWidth: "1200px",
+		},
+		"::after": {
+			content: '""',
+			position: "absolute",
+			zIndex: "-1",
+			top: ["-790px", null, null, "-840px", "-480px", "-300px"],
+			right: ["-700px", null, null, "-750px", "-450px", "-330px"],
+			width: ["1293px", null, null, null, "800px", "600px"],
+			height: ["1293px", null, null, null, "800px", "600px"],
+			borderRadius: "50%",
+			backgroundColor: colors.lightBlue,
 		}
 	})),
 	main: css(media({

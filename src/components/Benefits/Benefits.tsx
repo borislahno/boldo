@@ -6,7 +6,6 @@ import Feather from '/public/icons/feather.svg';
 import Eye from '/public/icons/eye.svg';
 import Sun from '/public/icons/sun.svg';
 import {styles} from "./styles";
-import {utils} from "../../styles/utils";
 import Link from "next/link";
 import {button} from "../../styles/button";
 

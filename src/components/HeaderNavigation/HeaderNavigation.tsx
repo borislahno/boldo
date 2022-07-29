@@ -5,12 +5,13 @@ import {button} from "../../styles/button";
 import Link from "next/link";
 
 type HeaderNavigationProps = {
-	mode?: 'white' | "dark",
+	mode: 'white' | "dark",
+	active: boolean,
 }
 
-const HeaderNavigation: React.FC<HeaderNavigationProps> = ({mode}) =>
-	<nav css={styles.navigation}>
-		<ul css={styles.list}>
+const HeaderNavigation: React.FC<HeaderNavigationProps> = ({mode, active}) =>
+	<nav css={[styles.navigation, styles[mode], active ? styles.active : null]}>
+		<ul css={[styles.list, active ? {display: "flex !important"} : null]}>
 			<LinkItem to="#" name="Product" type={mode}/>
 			<LinkItem to="#" name="Services" type={mode}/>
 			<LinkItem to="/about" name="About" type={mode}/>
@@ -25,7 +26,6 @@ const HeaderNavigation: React.FC<HeaderNavigationProps> = ({mode}) =>
 							Log In
 						</a>
 					}
-
 				</Link>
 			</li>
 		</ul>

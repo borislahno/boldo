@@ -11,13 +11,29 @@ export const styles = {
 		}
 	})),
 	form: css(media({
+		position: "relative",
+		zIndex: "10",
 		width: "100%",
 		padding: ["72px 20px 74px 20px", null, null, null, "50px 20px 50px 20px", "30px 20px 30px 20px"],
 		backgroundColor: colors.darkBlue,
 		borderRadius: "12px",
+		overflow: "hidden",
+		"::after": {
+			content: '""',
+			position: "absolute",
+			zIndex: "12",
+			top: ["-1040px", null, null, null, "-1100px", "-670px"],
+			right: ["-600px", null, null, null, "-700px", "-450px"],
+			width: ["1293px", null, null, null, null, "800px"],
+			height: ["1293px", null, null, null, null, "800px"],
+			borderRadius: "50%",
+			backgroundColor: colors.lightBlue,
+		}
 	})),
 	heading: css(media({
-		maxWidth: "716px",
+		position: "relative",
+		zIndex: "30",
+		maxWidth: "750px",
 		margin: ["0 auto 50px auto", null, null, null, null, "0 auto 30px auto"],
 		color: colors.white,
 	})),

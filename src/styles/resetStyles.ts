@@ -34,10 +34,15 @@ export const resetStyles = `
 		-ms-text-size-adjust: 100%;
   	-moz-text-size-adjust: 100%;
   	-webkit-text-size-adjust: 100%;
-  	
+  		
   	@media (max-width: 544px){
   		font-size: 14px;
 		}
+	}
+	
+	.lock{
+		overflow: hidden;
+	}
 	
 	input, button, textarea {
 		font-family: inherit;
