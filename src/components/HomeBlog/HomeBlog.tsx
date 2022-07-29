@@ -4,6 +4,7 @@ import Container from "../../layout/Container/Container";
 import {typography} from "../../styles/typography";
 import {styles} from "./styles";
 import {button} from "../../styles/button";
+import Link from "next/link";
 
 const HomeBlog: React.FC = () =>
 	<section css={styles.blog}>
@@ -31,7 +32,9 @@ const HomeBlog: React.FC = () =>
 					name="Monica Geller"
 				/>
 			</div>
-			<a css={[button.btn, button.btnTransparentBorderBlue, styles.button]}>Load more</a>
+			<Link href="/blog">
+				<a css={[button.btn, button.btnTransparentBorderBlue, styles.button]}>Load more</a>
+			</Link>
 		</Container>
 	</section>
 

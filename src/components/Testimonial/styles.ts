@@ -5,14 +5,17 @@ import {media} from "../../styles/breakpoints";
 
 export const styles = {
 	testimonial: css(media({
+		display: "flex",
+		flexDirection: "column",
 		flex: ["0 0 350px", null, null, null, null, "0 0 300px"],
-		height: "100%",
+		height: ["100%", null, null, null, null, "auto"],
 		padding: ["40px", null, null, null, null, "20px"],
 		backgroundColor: colors.white,
 		borderRadius: "12px",
 		boxShadow: "0px 12px 32px rgba(0, 0, 0, 0.12)",
 	})),
 	text: css(media({
+		flex: "1 1 auto",
 		marginBottom: ["40px", null, null, null, null, "20px"],
 		...mixin.font("1.5rem", 400, "2.25rem"),
 		color: colors.black,
